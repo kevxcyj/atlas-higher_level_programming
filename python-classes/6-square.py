@@ -46,21 +46,21 @@ class Square:
         return self.__size ** 2
 
     def positive_p(self):
-        s_positive = ""
+        s_position = ""
         if self.size == 0:
             return "\n"
         
-        for n in range(self.positive[1]):
-            s_positive += "\n"
+        for n in range(self.position[1]):
+            s_position += "\n"
         for n in range(self.size):
-            for x in range(self.positive[0]):
-                s_positive += " "
+            for x in range(self.position[0]):
+                s_position += " "
             for y in range(self.size):
-                s_positive += "#"
+                s_position += "#"
 
-            s_positive += "\n"
+            s_position += "\n"
 
-        return s_positive
+        return s_position
     
     def my_print(self):
         print(self.positive_p(), end='')

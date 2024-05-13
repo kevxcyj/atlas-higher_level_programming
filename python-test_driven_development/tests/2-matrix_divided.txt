@@ -1,0 +1,42 @@
+------------------------------
+How to use 2-matrix_divided.py
+------------------------------
+
+This includes a division function '' def matrix_divided(matrix, div) ''
+-----------------------------------------------------------------------
+
+--- Importing ---
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+
+
+
+     >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, "not a number"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix = [
+    ...     [3, 6, 9],
+    ...     [12, 15, 18]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> matrix = [
+    ...     [1, 2, 3, 4],
+    ...     [5, 6, 7]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+	>>> print(matrix_divided(matrix, float('inf')))
+	[[0.0], [0.0], [0.0]]

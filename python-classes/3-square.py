@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Write a class Square that defines 
+""" Write a class Square that defines
     the area of a square """
 
 

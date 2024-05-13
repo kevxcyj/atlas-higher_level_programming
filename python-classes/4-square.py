@@ -30,4 +30,4 @@ class Square:
         self.__size = value
 
     def are(self):
-        return (size ** 2)
+        return (self.__size ** 2)

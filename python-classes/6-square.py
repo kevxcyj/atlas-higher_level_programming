@@ -5,7 +5,7 @@
 class Square:
     """ Function """
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
 
@@ -15,22 +15,22 @@ class Square:
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
 
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
-        
+
         if value < 0:
             raise ValueError('size must be >= 0')
-        
+
         self.__size = value
 
     @property
     def position(self):
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         if not isinstance(value, tuple):
@@ -49,7 +49,7 @@ class Square:
         s_position = ""
         if self.size == 0:
             return "\n"
-        
+
         for n in range(self.position[1]):
             s_position += "\n"
         for n in range(self.size):
@@ -61,6 +61,6 @@ class Square:
             s_position += "\n"
 
         return s_position
-    
+
     def my_print(self):
         print(self.positive_p(), end='')

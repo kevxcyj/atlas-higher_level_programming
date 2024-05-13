@@ -1,0 +1,29 @@
+--------------------------------
+How to use 5-text_indentation.py
+--------------------------------
+
+This includes a function that prints 2 new lines after each of the characters: ., ?, :,
+---------------------------------------------------------------------------------------
+
+--- Importing ---
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere?
+    <BLANKLINE>
+    Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud:
+    <BLANKLINE>
+    Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere.
+    <BLANKLINE>
+    Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum
+    <BLANKLINE>
+    rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo
+    <BLANKLINE>
+    stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum
+    <BLANKLINE>
+    cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio
+    <BLANKLINE>
+    beatiorem! Iam ruinas videres""")
+
+    >>> text_indentation("")

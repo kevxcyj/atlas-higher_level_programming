@@ -47,10 +47,10 @@ class Rectangle:
 
         rect = ""
         for i in range(self.__height):
-            rectangle += "#" * self.width
+            rect += "#" * self.width
             if i < self.height - 1:
-                rectangle += "\n"
-        return rectangle
+                rect += "\n"
+        return rect
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)

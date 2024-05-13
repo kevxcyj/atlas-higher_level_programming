@@ -17,9 +17,10 @@ class Rectangle:
     def width(self, value):
 
         if not isinstance(value, int):
-            raise TypeError("width must be an interger")
-        elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise TypeError("width must be an integer")
+        else:
+            if value < 0:
+                raise ValueError("width must be >= 0")
             
         self.__width = value
 

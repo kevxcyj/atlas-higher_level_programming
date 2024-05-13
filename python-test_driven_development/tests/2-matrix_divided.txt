@@ -8,6 +8,22 @@ This includes a division function '' def matrix_divided(matrix, div) ''
 --- Importing ---
     >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
+Checking for matrix as list:
+	 >>> matrix = "Hello"
+	 >>> matrix_divided(matrix, 1)
+	 Traceback (most recent call last):
+         ...
+         TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    Checking for mix of ints, floats, and tuple:
+         >>> matrix = [[1, (1,), 3], [4, 5, 6.8]]
+         >>> matrix_divided(matrix, 11)
+         Traceback (most recent call last):
+         ...
+         TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+        The parameter ``div`` must be either an int or float. Otherwise, a TypeError
+    is raised.
 
 
 

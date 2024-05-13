@@ -7,7 +7,7 @@ class Square:
 
     def __init__(self, size=0, position=(0,0)):
         self.size = size
-        self.pos = position
+        self.position = position
 
     def __str__(self):
         self.print_sq()
@@ -29,7 +29,7 @@ class Square:
 
     @property
     def position(self):
-        return self.__pos
+        return self.__position
     
     @position.setter
     def position(self, value):

@@ -3,14 +3,11 @@
 """ Class that inherits from list """
 
 
-
 class Mylist(list):
-
     """ Defines print_sorted """
 
 
     def print_sorted(self):
-
         """ Prints integers """
 
         for s in self:

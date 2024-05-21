@@ -11,6 +11,8 @@ class Mylist(list):
 
     def print_sorted(self):
 
+        """ Prints integers """
+
         for s in self:
             if not isinstance(s, int):
                 raise TypeError()

@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ Function """
 
-
 class Mylist(list):
     """ Class MyList """
 

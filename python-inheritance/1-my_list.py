@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Class that inherits from list """
+""" Function """
 
 
 class Mylist(list):

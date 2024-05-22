@@ -5,7 +5,6 @@
 class Mylist(list):
     """ Class MyList """
 
-
     def print_sorted(self):
         """ Prints integers """
 

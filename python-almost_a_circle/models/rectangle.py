@@ -77,3 +77,11 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
 
         self.__y = value
+
+    def area(self):
+        """ Returns area of the Rectangle """
+        return (self.width * self.height)
+
+    def display(self):
+        """ Prints Rectangle instance with the character # in stdout """
+        print("\n" * self.y, end="")

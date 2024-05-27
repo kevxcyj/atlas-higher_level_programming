@@ -88,3 +88,10 @@ class Rectangle(Base):
 
         for i in range(self.height):
             print(" " * self.x + "#" * self.width)
+
+    def __str__(self):
+        """ Overiding str to return Rectangle """
+        return ("[{}] ({}) {}/{} - {}/{}".format(
+            type(self).__name__, self.id, self.__x, self.__y,
+                self.__width, self.__height)
+                )

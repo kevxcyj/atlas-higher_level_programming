@@ -12,7 +12,6 @@ class Rectangle(Base):
             width = width of rectangle
             height = height of rectangle """
         super().__init__(id)
-
         self.width = width
         self.height = height
         self.x = x

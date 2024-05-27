@@ -33,7 +33,8 @@ class Base:
 
         filename = f"{cls.__name__}.json"
         with open(filename, "w") as file:
-            json_string = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+            json_string = (cls.to_json_string([obj.to_dictionary() 
+                                               for obj in list_objs]))
 
             file.write(json_string)
 
@@ -57,7 +58,7 @@ class Base:
         file_name = f"{cls.__name__}.json"
         try:
             with open(file_name, "r") as file:
-                return (([cls.create(**data) for 
+                return (([cls.create(**data) for
                           data in cls.from_json_string(file.read())]))
         except FileNotFoundError:
             return ([])

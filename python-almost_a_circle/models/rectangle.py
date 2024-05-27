@@ -94,4 +94,16 @@ class Rectangle(Base):
         return ("[{}] ({}) {}/{} - {}/{}".format(
             type(self).__name__, self.id, self.__x, self.__y,
                 self.__width, self.__height)
-                )
+            )
+
+    def update(self, *args, **kwargs):
+        """ Improving public method to print in stdout """
+
+        attr_order = ["id", "width", "height", "x", "y"]
+
+        if args is not None and len(args) > 0:
+            for index, arg in enumerate(args):
+                setattr(self, attr_order[index], arg)
+        else:
+            for attr, attr_value in kwargs.items():
+                setattr(self, attr, attr_value)

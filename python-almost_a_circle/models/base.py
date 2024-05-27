@@ -5,7 +5,7 @@
 import json
 
 
-class Base
+class Base:
     """ Class """
     __nb_objects = 0
 

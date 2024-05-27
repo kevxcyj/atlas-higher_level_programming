@@ -50,3 +50,13 @@ class Base:
         tmp_obj = cls(1, 1)
         tmp_obj.update(**dictionary)
         return tmp_obj
+
+    @classmethod
+    def load_from_file(cls):
+        """ Returns list of instances """
+        file_name = f"{cls.__name__}.json"
+        try:
+            with open(file_name, "r") as file:
+                return ([cls.create(**data) for data in cls.from_json_string(file.read())])
+        except FileNotFoundError:
+            return ([])

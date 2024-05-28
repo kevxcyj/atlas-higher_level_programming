@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" Function """
+""" Function that inherits for Mylist """
 
 class Mylist(list):
-    """ Class MyList """
+    """ Creating th class Mylist """
 
     def print_sorted(self):
-        """ Prints integers """
+        """ Prints integers and sorts """
 
     print(sorted(self))

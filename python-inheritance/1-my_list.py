@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Function that inherits for Mylist """
+""" Function that inherits for Mylist and creates a list of integers """
 
 class Mylist(list):
     """ Creating th class Mylist """

@@ -4,8 +4,7 @@
 
 
 class Mylist(list):
-    """ Class Mylist that inherits from list """
-
+    """ Mylist class - that inherits from list """
     def print_sorted(self):
         """ Prints integers and sorts in order """
 

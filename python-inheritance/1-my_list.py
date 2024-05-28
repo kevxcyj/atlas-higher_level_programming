@@ -4,6 +4,6 @@
 class Mylist(list):
     """ Mylist class - that inherits from list """
     def print_sorted(self):
-        """ Prints integers and sorts in order """
+        """ Prints integers in Mylist and sorts in order """
 
         print(sorted(self))

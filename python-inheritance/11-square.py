@@ -12,6 +12,13 @@ class Square(Rectangle):
         """ Size = length """
 
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
-        super().__init__(size, size)
+    def area(self):
+        return (self.__size ** 2)
+
+    def __str__(self):
+        """ Prints and returns str """
+
+        return ("[Square] {}/{}".format(self.__size, self.__size))

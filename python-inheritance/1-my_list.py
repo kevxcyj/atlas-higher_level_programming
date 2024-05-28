@@ -4,9 +4,9 @@
 
 
 class Mylist(list):
-    """ Creating the class Mylist that inherits from list """
+        """ Creating the class Mylist that inherits from list """
 
-    def print_sorted(self):
-        """ Prints integers and sorts in order """
+        def print_sorted(self):
+            """ Prints integers and sorts in order """
 
-        print(sorted(self))
+            print(sorted(self))

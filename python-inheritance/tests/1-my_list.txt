@@ -12,6 +12,7 @@ Correct Class Type test:
     >>> type(ml) == MyList
     True
 
+python3 -c 'print(__import__("my_list").MyList.__doc__)'
 
 ``MyList.print_sorted()``
 Prints integers in order

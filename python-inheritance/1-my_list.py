@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Function that inherits for Mylist and creates a list of integers """
 
+
 class Mylist(list):
     """ Creating th class Mylist """
 
@@ -11,4 +12,4 @@ class Mylist(list):
             if not isinstance(i, int):
                 raise TypeError()
 
-    print(sorted(self))
+        print(sorted(self))

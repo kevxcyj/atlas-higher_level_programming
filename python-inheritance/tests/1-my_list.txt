@@ -7,6 +7,12 @@ Importing
 -----------------------------------------------
     >>> MyList = __import__('1-my_list').MyList
 
+Correct Class Type test:
+    >>> ml = MyList()
+    >>> type(ml) == MyList
+    True
+
+
 ``MyList.print_sorted()``
 Prints integers in order
 

@@ -4,23 +4,17 @@
 from sys import argv
 import MYSQLdb
 
+if __name__ == '__main__':
 
-def connect_mysql():
-    """Connect to MySQL server """
-    db = MySQLdb.connect(
-        user=argv[1],
-        passwd=argv[2],
-        db=argv[3],
-        host="localhost",
-        port=3306
-        )
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                    passwd=argv[2], db=argv[3])
+
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states")
+
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
-
-
-if __name__ == '__main__':
-    connect_mysql()
+    for i in rows:
+        print(i)
+    cur.close()
+    db.close()

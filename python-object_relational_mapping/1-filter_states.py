@@ -7,18 +7,24 @@ from sys import argv
 
 def connect_mysql():
     """Connect to MySQL server """
-    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
-                         passwd=argv[2], db=argv[3])
+    db = MySQLdb.connect(
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3],
+        host="localhost",
+        port=3306
+        )
 
-     cur = db.cursor()
-    nmeSr = "SELECT * FROM states WHERE name LIKE BINARY '{}'".format(argv[4])
-    cur.execute(nmeSr)
-
+    cur = db.cursor()
+    cur.execute(
+        "SELECT * FROM states \
+        WHERE name LIKE BINARY 'N%' \
+        ORDER BY states.id ASC"
+        )
     rows = cur.fetchall()
-    for i in rows:
-        print(i)
-    cur.close()
-    db.close()
+    for row in rows:
+        print(row)
+
 
 if __name__ == '__main__':
     connect_mysql()

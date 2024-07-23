@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// Returns reversed version of list
 
 exports.esrever = function (list) {
     const reversedList = [];

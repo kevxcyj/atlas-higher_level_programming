@@ -3,7 +3,7 @@
 
 const fs = require('fs');
 
-if (process.argv.length == 2) {
+if (process.argv.length === 2) {
   console.error('An error has occured');
   process.exit(1);
 }

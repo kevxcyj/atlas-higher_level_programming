@@ -1,5 +1,6 @@
 #!/usr/bin/node
 // Script that writes a string to a file
+
 const fs = require('fs');
 
 if (process.argv.length === 3) {
